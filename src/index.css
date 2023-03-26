@@ -1,0 +1,81 @@
+@import url("https://fonts.googleapis.com/css2?family=Playfair+Display:wght@700&family=Poppins:wght@300;400&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  max-width: 100vw;
+}
+.navbar {
+  font-family: "Poppins", sans-serif;
+  font-size: 17px;
+  line-height: 26px;
+  text-transform: uppercase;
+  box-shadow: 0 8px 6px -6px gray;
+  border-bottom: solid gray;
+}
+
+.nav-link {
+  font-weight: 300;
+}
+
+.active {
+  border-bottom: 1px solid black;
+}
+.navbar-brand {
+  font-weight: 700;
+  font-family: "roboto", sans-serif;
+  letter-spacing: 3px;
+}
+.register,
+.login {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 70vh;
+  flex-direction: column;
+  margin-top: 5rem;
+}
+.register form,
+.login form {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.register form input,
+.login form input {
+  padding: 5px;
+  margin-bottom: 10px;
+  width: 250px;
+}
+.card {
+  width: 20rem;
+  height: 500px;
+  padding: 15px;
+  margin: 20px;
+}
+.card-img-top {
+  max-height: 230px;
+}
+.card-img-top img {
+  height: 100%;
+}
+.card-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+.img-container {
+  width: 100px;
+}
+.img-container img {
+  width: 100%;
+}
+.box {
+  border: 1px solid black;
+  margin: 20px;
+  padding: 10px;
+}
