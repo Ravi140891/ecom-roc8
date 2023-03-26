@@ -18,9 +18,8 @@ const CartPage = () => {
     });
     setCount(newCount);
   }, [cart]);
-
   const handleIncrement = (id) => {
-    const abc = cart.findIndex((product) => (product.id = id));
+    const abc = cart.findIndex((product) => product.id === id);
     if (abc >= 0) {
       const newCart = JSON.parse(JSON.stringify(cart));
       newCart[abc].count = newCart[abc].count + 1;
@@ -30,7 +29,7 @@ const CartPage = () => {
   };
 
   const handleDecrement = (id) => {
-    const abc = cart.findIndex((product) => (product.id = id));
+    const abc = cart.findIndex((product) => product.id === id);
     if (abc >= 0) {
       const newCart = JSON.parse(JSON.stringify(cart));
       if (newCart[abc].count === 1) {
